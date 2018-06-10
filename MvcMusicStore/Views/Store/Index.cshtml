@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MvcMusicStore.Models.Genre>
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Liste Genres";
+}
+<title>@ViewBag.Title</title>
+<ol>
+   @foreach(var m in Model)
+   {
+       <li>@m.Name</li>
+   }
+</ol>
+
